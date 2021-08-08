@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Pyodide from './pyodide';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>
+        <div>
+          <Pyodide pythonCode="print(3+5)" />
+        </div>
+      </body>
     </div>
   );
 }
